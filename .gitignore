@@ -46,3 +46,5 @@ jspm_packages
 
 
 /dist
+config/development.json
+config/production.json
