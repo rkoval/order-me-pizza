@@ -79,3 +79,9 @@ html(lang='en')
 
       script(src='jquery.min.js')
       script(src='js/bootstrap.min.js')
+      script.
+        $(function() {
+          $('form').submit(function(e) {
+            $('button').prop('disabled', true);
+          });
+        });
