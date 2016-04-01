@@ -26,7 +26,7 @@
     "clientId": "",
     "secret": "",
     "priceToCharge": "",
-    "redirectHost": "http://localhost:3000"
+    "redirectHost": "http://localhost:3003"
   },
   "cc": {
     "number": "",
