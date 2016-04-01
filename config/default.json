@@ -2,7 +2,8 @@
   "dominos": {
     "orderTime": {
       "hour": 19,
-      "minute": 30
+      "minute": 30,
+      "isoWeekdaysToSkip": [ 1 ]
     },
     "customer": {
       "address": "",
