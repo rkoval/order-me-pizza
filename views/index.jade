@@ -45,7 +45,9 @@ html(lang='en')
             ol
               li Fill out the teeny tiny form below and submit it
               li Log in to PayPal using the authorization portal
-              li Authorize the payment for $#{paymentAmount} <small>(that's $$22.97 + a 15% tip. You're so generous!)</small>
+              - const percentTip = 15;
+              - const paymentAmountWithoutTip = paymentAmount - (paymentAmount * (percentTip / 100));
+              li Authorize the payment for $#{paymentAmount} <small>(that's $#{paymentAmountWithoutTip.toFixed(2)} + a #{percentTip}% tip. You're so generous!)</small>
               li <strong>Your money gets sent to me</strong>, and <strong>I give you back nothing in return.</strong>
               
           p Assuming that one of 8 million things didn't go wrong related to my inability as a web developer, your PayPal account will be debited. Then, a Dominos order will <strong>automatically</strong> be placed to be delivered for my dinner tonight! <small>(or tomorrow night if it's already too late in the day)</small>

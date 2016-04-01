@@ -26,7 +26,7 @@
   "paypal": {
     "clientId": "",
     "secret": "",
-    "priceToCharge": "",
+    "priceToCharge": 0,
     "redirectHost": "http://localhost:3003"
   },
   "cc": {
