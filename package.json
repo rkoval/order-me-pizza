@@ -4,7 +4,7 @@
   "description": "A stupid service providing the ability for people to easily buy you a pizza delivery",
   "main": "dist/index.js",
   "scripts": {
-    "build": "bower install && babel lib -d dist",
+    "build": "bower install --allow-root && babel lib -d dist",
     "clean": "rm -rf dist",
     "dev": "nodemon lib/index.js --exec babel-node",
     "postinstall": "npm run build && npm prune",
