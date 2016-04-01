@@ -8,7 +8,7 @@
     "clean": "rm -rf dist",
     "dev": "nodemon lib/index.js --exec babel-node",
     "postinstall": "npm run build && npm prune",
-    "start": "forever start dist/index.js",
+    "start": "forever dist/index.js",
     "stop": "forever stop dist/index.js"
   },
   "repository": {
