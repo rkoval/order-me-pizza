@@ -2,12 +2,30 @@ html, body, .wrapper, canvas {
   height: 100%;
   width: 100%;
   margin: 0px;
+  overflow: hidden;
 }
 
-.wrapper {
-  position: relative;
+canvas {
+  background:url(/images/success-pizza.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
 }
 
-p {
+span {
+  font-family: "Comic Sans MS", sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   position: absolute;
+  width: 280px;
+  height: 100px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
 }
