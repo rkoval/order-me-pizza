@@ -69,7 +69,7 @@ html(lang='en')
               .checkbox
                 label
                   input(id=name, type='checkbox', name=name required=required) 
-                  | #{label}
+                  | !{label}
 
             + checkbox('confirm1', 'Check this to confirm that you read this whole page and accept that <strong>you are absolutely not getting your money back.</strong>', true)
             + checkbox('confirm2', 'Check this if you agree to whatever the above checkbox said', true)
