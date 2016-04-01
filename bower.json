@@ -1,0 +1,24 @@
+{
+  "name": "order-me-pizza",
+  "version": "0.0.0",
+  "authors": [
+    "Ryan Koval <ryan@ryankoval.com>"
+  ],
+  "moduleType": [
+    "es6",
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "confetti.js": "^0.1.11",
+    "lodash": "^4.6.1"
+  }
+}

@@ -1,0 +1,77 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Order Me Pizza
+    link(rel='stylesheet' href='css/bootstrap.min.css')
+    link(rel='stylesheet' href='css/index.css')
+    style.
+      #forkongithub a{background:#000;color:#fff;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#c11;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:fixed;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style>
+
+  body
+    span#forkongithub
+      a(href='') Source on GitHub!
+
+    .container
+      .row
+        .col-lg-12
+            h1 Let's Order a Pizza! 🍕
+
+    .container
+      .row
+        .col-lg-12
+          if error
+            p.bg-danger #{error}
+
+          h3 Pizza, huh? What <em>kind</em> of pizza? 😮
+          p I'm glad you asked! It's a medium, handtossed Dominos pizza with:
+            ul
+              li Double Pepperoni <small>(dank)</small>
+              li Green Peppers <small>(dank)</small>
+              li Roasted Red Peppers <small>(dank)</small>
+              li Diced Tomatoes <small>(dank)</small>
+              li Pineapple <small>(<em>super</em> dank)</small>
+
+          h3 Hmm... I'm not sure how I feel about that topping selection ... 😰
+          p That's the beauty of this process! You have absolutely no say in any of it! 
+          p In fact, you have such an impossibly absent influence on everything here that <strong>you're going to be paying</strong>, and <strong>I'm not going to reimburse you a goddamned cent!</strong>
+
+          h3 That sounds great! How does it all work? 😀
+          p It's really simple!
+            ol
+              li Fill out the teeny tiny form below and submit it
+              li Log in to PayPal using the authorization portal
+              li Authorize the payment for $#{paymentAmount} <small>(that's $$22.97 + a 15% tip. You're so generous!)</small>
+              li <strong>Your money gets sent to me</strong>, and <strong>I give you back nothing in return.</strong>
+              
+          p Assuming that one of 8 million things didn't go wrong related to my inability as a web developer, your PayPal account will be debited. Then, a Dominos order will <strong>automatically</strong> be placed to be delivered for my dinner tonight! <small>(or tomorrow night if it's already too late in the day)</small>
+
+          h3 Wow! I never thought anything would be so easy <em>AND</em> delicious! ... but is this safe? 😕
+          p It sure is! Through my implementation, I have access to absolutely nothing sensitive inside of your PayPal account. That means I can't see your password, PayPal balance, bank accounts, credit cards, or anything else privately tied to your PayPal account. 
+          p The only thing I see is the transaction in my <em>own</em> PayPal account, but that's the exact same as you sending money to someone else anyways.
+          p 
+            a(href='https://github.com/rkoval/order-me-pizza' target='_blank') The code for this website is completely public too. 
+            | If you're at all skeptical, you can browse through it and see exactly what it's doing. Huzzah, open source!
+
+    .container
+      .row
+        .col-lg-12
+          form(method='post', action='/')
+            h1 Shut up and take my money! 😍
+
+            p Fine!
+
+            mixin checkbox(name, label, required)
+              .checkbox
+                label
+                  input(id=name, type='checkbox', name=name required=required) 
+                  | #{label}
+
+            + checkbox('confirm1', 'Check this to confirm that you read this whole page and accept that <strong>you are absolutely not getting your money back.</strong>', true)
+            + checkbox('confirm2', 'Check this if you agree to whatever the above checkbox said', true)
+            button.btn.btn-default(type='submit') Login and Authorize PayPal Pizza Payment&nbsp; 💸🍕
+
+      script(src='jquery.min.js')
+      script(src='js/bootstrap.min.js')

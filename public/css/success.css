@@ -1,0 +1,13 @@
+html, body, .wrapper, canvas {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+p {
+  position: absolute;
+}

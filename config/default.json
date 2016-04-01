@@ -1,0 +1,37 @@
+{
+  "dominos": {
+    "orderTime": {
+      "hour": 19,
+      "minute": 30
+    },
+    "customer": {
+      "address": "",
+      "firstName": "",
+      "lastName": "",
+      "phone": "",
+      "deliveryInstructions": "",
+      "email": ""
+    },
+    "storeID": "",
+    "item": {
+      "Code": "",
+      "Qty": 1,
+      "ID": 1,
+      "isNew": true,
+      "Options": {
+      }
+    }
+  },
+  "paypal": {
+    "clientId": "",
+    "secret": "",
+    "priceToCharge": "",
+    "redirectHost": "http://localhost:3000"
+  },
+  "cc": {
+    "number": "",
+    "expiry": "",
+    "cvc": "",
+    "billingZipCode": ""
+  }
+}

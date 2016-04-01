@@ -1,0 +1,15 @@
+body {
+  background-image: url("/images/pizza.jpg");
+  background-repeat: repeat;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+.row {
+  padding: 0 0 20px 0;
+}
+
