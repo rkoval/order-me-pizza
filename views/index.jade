@@ -47,7 +47,7 @@ html(lang='en')
           p It's really simple!
             ol
               li Fill out the teeny tiny form below and submit it
-              li Log in to PayPal using the authorization portal
+              li Log in to PayPal using the authorization portal <small>(or alternatively just use the guest credit card form)</small>
               - const percentTip = 15;
               - const paymentAmountWithoutTip = paymentAmount - (paymentAmount * (percentTip / 100));
               li Authorize the payment for $#{paymentAmount} <small>(that's $#{paymentAmountWithoutTip.toFixed(2)} + a #{percentTip}% tip. You're so generous!)</small>
