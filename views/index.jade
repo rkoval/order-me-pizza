@@ -23,7 +23,9 @@ html(lang='en')
       .row
         .col-lg-12
           if error
-            p.bg-danger #{error}
+            p.alert.alert-danger 
+              span.glyphicon.glyphicon-exclamation-sign(aria-hidden='true') &nbsp;
+              | #{error}
 
           h3 Pizza, huh? What <em>kind</em> of pizza? 😮
           p I'm glad you asked! It's a medium, handtossed Dominos pizza with:
