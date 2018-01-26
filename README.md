@@ -14,7 +14,7 @@ A dumb website original published on April 1st, 2016 that enables your friends/e
 $ npm install
 ```
 
-## Run in Dev mode with runtime Babel transpiling
+## Run in Dev mode
 
 ```
 $ npm run dev
