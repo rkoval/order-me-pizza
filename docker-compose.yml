@@ -1,9 +1,0 @@
----
-version: "3"
-services:
-  order-me-pizza:
-    image: "rkoval/order-me-pizza:latest"
-    build:
-      context: .
-    ports:
-    - "8083:3003"
