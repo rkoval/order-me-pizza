@@ -26,7 +26,7 @@ html(lang='en')
       .row
         .col-lg-12
           if error
-            p.alert.alert-danger 
+            p.alert.alert-danger
               span.glyphicon.glyphicon-exclamation-sign(aria-hidden='true') &nbsp;
               | #{error}
 
@@ -40,7 +40,7 @@ html(lang='en')
               li Pineapple <small>(<em>super</em> dank)</small>
 
           h3 Hmm... I'm not sure how I feel about that topping selection ... 😰
-          p That's the beauty of this process! You have absolutely no say in any of it! 
+          p That's the beauty of this process! You have absolutely no say in any of it!
           p In fact, you have such an impossibly absent influence on everything here that <strong>you're going to be paying</strong>, and <strong>I'm not going to reimburse you a goddamned cent!</strong>
 
           h3 That sounds great! How does it all work? 😀
@@ -52,16 +52,16 @@ html(lang='en')
               - const paymentAmountWithoutTip = paymentAmount - (paymentAmount * (percentTip / 100));
               li Authorize the payment for $#{paymentAmount} <small>(that's $#{paymentAmountWithoutTip.toFixed(2)} + a #{percentTip}% tip. You're so generous!)</small>
               li <strong>Your money gets sent to me</strong>, and <strong>I give you back nothing in return.</strong>
-              
+
           p Assuming that one of 8 million things didn't go wrong related to my inability as a web developer, your PayPal account will be debited. Then, a Dominos order will <strong>automatically</strong> be placed to be delivered for my dinner tonight! <small>(or tomorrow night if it's already too late in the day)</small>
 
           p <strong>Important Note:</strong> Upon logging in, you will see your PayPal shipping address as the shipping address for the purchase. Rest assured! The pizza will still be delivered to me, and you will still be receiving nothing.
 
           h3 Wow! I never thought anything would be so easy <em>AND</em> delicious! ... but is this safe? 😕
-          p It sure is! Through my implementation, I have access to absolutely nothing sensitive inside of your PayPal account. That means I can't see your password, PayPal balance, bank accounts, credit cards, or anything else privately tied to your PayPal account. 
+          p It sure is! Through my implementation, I have access to absolutely nothing sensitive inside of your PayPal account. That means I can't see your password, PayPal balance, bank accounts, credit cards, or anything else privately tied to your PayPal account.
           p The only thing I see is the transaction in my <em>own</em> PayPal account, but that's the exact same as you sending money to someone else anyways.
-          p 
-            a(href='https://github.com/rkoval/order-me-pizza' target='_blank') The code for this website is completely public too. 
+          p
+            a(href='https://github.com/rkoval/order-me-pizza' target='_blank') The code for this website is completely public too.
             | If you're at all skeptical, you can browse through it and see exactly what it's doing. Huzzah, open source!
 
     .container
@@ -75,7 +75,7 @@ html(lang='en')
             mixin checkbox(name, label, required)
               .checkbox
                 label
-                  input(id=name, type='checkbox', name=name required=required) 
+                  input(id=name, type='checkbox', name=name required=required)
                   | !{label}
 
             + checkbox('confirm1', 'Check this to confirm that you read this whole page and accept that <strong>you are absolutely not getting your money back.</strong>', true)
@@ -84,16 +84,7 @@ html(lang='en')
 
     script(src='jquery.min.js')
     script(src='js/bootstrap.min.js')
-    if !isDev
-      script.
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-75799791-1', 'auto');
-        ga('send', 'pageview');
-
+    include analytics.jade
     script.
       $(function() {
         $('form').submit(function(e) {
