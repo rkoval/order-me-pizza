@@ -1,6 +1,6 @@
 # order-me-pizza
 
-A dumb website original published on April 1st, 2016 that enables your friends/enemies to buy you a pizza delivery without you having to give them anything in return. It uses the Dominos API for ordering.
+A dumb website originally published on April 1st, 2016 that enables your friends/enemies to buy you a pizza delivery without you having to give them anything in return. It uses the Dominos API for ordering.
 
 ## Prerequisites
 
