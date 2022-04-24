@@ -1,0 +1,35 @@
+{
+  "parser": "@babel/eslint-parser",
+  parserOptions: {
+    requireConfigFile: false,
+    sourceType: "module",
+    ecmaFeatures: {
+      globalReturn: false,
+    },
+  },
+  "extends": "eslint:recommended",
+  "globals": {},
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "plugins": [],
+  "rules": {
+    "strict": 0,
+    "curly": [2, "multi-line", "consistent"],
+    "no-multi-assign": 2,
+    "no-debugger": 1, // disallow use of debugger
+    "no-unused-vars": [1, { "args": "none", "varsIgnorePattern": "^(Promise|_)$" }],
+    "no-control-regex": 0,
+    "no-use-before-define": ["error", {"functions": false, classes: false, "variables": true}],
+    "prefer-promise-reject-errors": 2,
+    "no-undef": 2,
+    "no-mixed-spaces-and-tabs": 0, // disallow mixed spaces and tabs for indentation
+    "no-console": 0, // disallow use of console (off by default in the node environment)
+    "comma-dangle": 0,
+    "object-shorthand": [1, "properties"],
+    "prefer-template": 1,
+    "array-callback-return": 2, // https://eslint.org/docs/2.0.0/rules/array-callback-return
+    "prefer-const": 2,
+  }
+}

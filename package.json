@@ -1,8 +1,8 @@
 {
   "name": "order-me-pizza",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A stupid service providing the ability for people to easily buy you a pizza delivery",
-  "main": "dist/index.js",
+  "type": "module",
   "scripts": {
     "dev": "nodemon lib/index.js",
     "start": "node lib/index.js"
@@ -12,8 +12,8 @@
     "url": "git+ssh://git@github.com/rkoval/order-me-pizza.git"
   },
   "engines": {
-    "npm": "5.5.1",
-    "node": "9.1.0"
+    "npm": "8.6.0",
+    "node": "18.0.0"
   },
   "keywords": [
     "pizza",
@@ -28,25 +28,25 @@
   },
   "homepage": "https://github.com/rkoval/order-me-pizza#readme",
   "devDependencies": {
-    "nodemon": "^1.8.1"
+    "@babel/eslint-parser": "^7.17.0",
+    "eslint": "^8.14.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2"
   },
   "dependencies": {
     "body-parser": "^1.15.0",
     "bower": "^1.8.2",
     "compression": "^1.6.1",
     "config": "^1.19.0",
-    "dominos": "^2.0.1",
-    "eslint": "^2.1.0",
+    "dominos": "^3.3.1",
     "express": "^4.13.4",
     "express-jade": "0.0.3",
     "express-session": "^1.13.0",
     "jade": "^1.11.0",
-    "lodash": "^4.6.1",
     "moment": "^2.12.0",
     "morgan": "^1.6.1",
     "paypal-rest-sdk": "^1.6.8",
     "serve-favicon": "^2.3.0",
-    "serve-static": "^1.10.2",
-    "uuid": "^2.0.1"
+    "serve-static": "^1.10.2"
   }
 }

@@ -1,0 +1,5 @@
+node_modules
+dist
+bower_components
+**/node_modules
+__snapshots__/

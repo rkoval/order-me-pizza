@@ -1,4 +1,4 @@
-FROM node:9.1.0-wheezy
+FROM node:18.0.0-bullseye
 
 EXPOSE 3003
 WORKDIR /opt/ryankoval.pizza
