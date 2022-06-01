@@ -11,10 +11,6 @@
     "type": "git",
     "url": "git+ssh://git@github.com/rkoval/order-me-pizza.git"
   },
-  "engines": {
-    "npm": "8.6.0",
-    "node": "18.0.0"
-  },
   "keywords": [
     "pizza",
     "dominos",
