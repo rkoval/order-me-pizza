@@ -30,12 +30,12 @@
     "prettier": "^2.6.2"
   },
   "dependencies": {
-    "body-parser": "^1.15.0",
+    "body-parser": "^1.20.1",
     "bower": "^1.8.2",
     "compression": "^1.6.1",
     "config": "^1.19.0",
     "dominos": "^3.3.1",
-    "express": "^4.13.4",
+    "express": "^4.18.2",
     "express-jade": "0.0.3",
     "express-session": "^1.13.0",
     "jade": "^1.11.0",
