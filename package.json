@@ -35,7 +35,7 @@
     "compression": "^1.6.1",
     "config": "^1.19.0",
     "dominos": "^3.3.1",
-    "express": "^4.13.4",
+    "express": "^4.17.3",
     "express-jade": "0.0.3",
     "express-session": "^1.13.0",
     "jade": "^1.11.0",
