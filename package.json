@@ -33,7 +33,7 @@
     "body-parser": "^1.15.0",
     "bower": "^1.8.2",
     "compression": "^1.6.1",
-    "config": "^1.19.0",
+    "config": "^3.3.8",
     "dominos": "^3.3.1",
     "express": "^4.13.4",
     "express-jade": "0.0.3",
